@@ -5,6 +5,7 @@ print("Opening and testing python files with Binder")
 
 # import library
 import turtle
+screen = turtle.Screen()
   
 # function to draw an ellipse
 def draw_ellipse(radius):
@@ -12,7 +13,14 @@ def draw_ellipse(radius):
     turtle.circle(radius,90)
     turtle.circle(radius//2,90)
   
-# Main section
+################
+# Main section #
+################
+
+# Set screen size and colour
+screen.setup(500,500)
+screen.bgcolor('black')
+
 # tilt the shape to 45 degrees
 turtle.seth(45)
   
